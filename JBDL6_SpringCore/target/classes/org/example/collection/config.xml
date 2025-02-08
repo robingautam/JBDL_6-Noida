@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.example.collection.model.StudentParent" name="studentparent">
+        <property name="studentId" value="1001" />
+    </bean>
+
+    <bean class="org.example.collection.model.Student" name="student" parent="studentparent">
+        <property name="id" value="1" />
+        <property name="name" value="robin" />
+        <property name="email" value="robin@gmail.com" />
+        <property name="subjects">
+            <list>
+                <value>Hindi</value>
+                <value>English</value>
+                <value>Maths</value>
+            </list>
+        </property>
+        <property name="marks">
+            <map>
+                <entry key="Hindi" value="90" />
+                <entry key="English" value="95" />
+            </map>
+        </property>
+        <property name="set" >
+            <set>
+                <value>Hindi</value>
+                <value>Hindi</value>
+            </set>
+        </property>
+        <property name="address" ref="address" />
+    </bean>
+
+   <!-- <bean class="org.example.collection.model.Address" name="address">
+        <property name="street1" value="M.V" />
+        <property name="street2" value="Phase 1"/>
+        <property name="pincode" value="110091" />
+        <property name="state" value="delhi" />
+    </bean>-->
+
+    <bean class="org.example.collection.model.Address" name="address" p:street1="M.V" p:street2="Phase 1" p:pincode="110091" p:state="Delhi" >
+
+    </bean>
+
+
+</beans>

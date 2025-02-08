@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <!-- example of setter or property injection-->
+    <bean class="org.example.model.Person" id="person">
+        <property name="id" value="1" />
+        <property name="name" value="Robin" />
+        <property name="email" value="robin@gmail.com" />
+    </bean>
+
+    <!-- example of constructor injection-->
+
+    <bean class="org.example.model.Person" id="person2">
+        <constructor-arg>
+            <value>1</value>
+        </constructor-arg>
+        <constructor-arg>
+            <value>Robin</value>
+        </constructor-arg>
+        <constructor-arg>
+            <value>robin@gmail.com</value>
+        </constructor-arg>
+    </bean>
+
+    <bean class="org.example.model.Addition" name="addition">
+        <constructor-arg value="1" type="int" />
+        <constructor-arg value="2" type="int"/>
+    </bean>
+
+
+</beans>
