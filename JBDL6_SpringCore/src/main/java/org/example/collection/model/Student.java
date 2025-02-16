@@ -83,6 +83,7 @@ public class Student extends StudentParent {
                 ", set=" + set +
                 ", address=" + address +
                 ", studentId=" + studentId +
+                ", parentList=" + parentList +
                 '}';
     }
 }
