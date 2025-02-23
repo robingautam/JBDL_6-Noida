@@ -1,0 +1,8 @@
+org\gfg\JBDL6_SpringBoot\profile\DatabaseConfiguration.class
+org\gfg\JBDL6_SpringBoot\model\Student.class
+org\gfg\JBDL6_SpringBoot\controller\StudentController.class
+org\gfg\JBDL6_SpringBoot\service\StudentService.class
+org\gfg\JBDL6_SpringBoot\Jbdl6SpringBootApplication.class
+org\gfg\JBDL6_SpringBoot\controller\TestController.class
+org\gfg\JBDL6_SpringBoot\profile\ProductionDatabase.class
+org\gfg\JBDL6_SpringBoot\profile\DevelopmentDatabase.class
