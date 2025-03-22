@@ -1,0 +1,9 @@
+package org.gfg.JBDL6_REDIS.repository;
+
+import org.gfg.JBDL6_REDIS.Model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends JpaRepository<User,Integer> {
+}
